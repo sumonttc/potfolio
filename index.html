@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Maximalist Edition</title>
+  <!-- Google Fonts: Syne (Display), Space Grotesk (Body), Space Mono (Badges/Labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:ital,wght@0,700;1,700&family=Syne:wght@800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Decorative Background Noise / Halftone Grid -->
+  <div class="bg-pattern" aria-hidden="true"></div>
+
+  <!-- ================= HEADER / TOP BAR ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand-logo" id="brand-logo">
+        <span class="logo-star">✦</span>
+        <span id="nav-brand-text">PORTFOLIO.EXE</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#about" class="nav-pill">About</a>
+        <a href="#highlights" class="nav-pill">Highlights</a>
+        <a href="#gallery" class="nav-pill">Gallery</a>
+      </nav>
+
+      <!-- Dark / Light Mode Switcher -->
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark and Light Mode">
+        <span class="theme-icon" id="theme-icon">🌙</span>
+        <span class="theme-label" id="theme-label">DARK MODE</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO / PROFILE SECTION ================= -->
+  <main id="top">
+    <section id="about" class="hero-section">
+      <div class="container hero-grid">
+        
+        <!-- Left Column: Layered Maximalist Profile Frame -->
+        <div class="profile-stage">
+          <div class="sticker sticker-top-left" id="badge-status">AVAILABLE FOR WORK</div>
+          <div class="sticker sticker-bottom-right">100% ORIGINAL ★</div>
+          
+          <div class="profile-frame-back"></div>
+          <div class="profile-frame-main">
+            <img id="profile-img" src="" alt="Profile Portrait" class="profile-img" />
+          </div>
+          
+          <div class="sticker-pill" id="profile-location">📍 EARTH, MILKY WAY</div>
+        </div>
+
+        <!-- Right Column: Name, Bio, Action Buttons, Socials & About Card -->
+        <div class="hero-content">
+          <div class="role-tag" id="profile-role">CREATIVE DEVELOPER & DESIGNER</div>
+          <h1 class="hero-title" id="profile-name">YOUR NAME HERE</h1>
+          <p class="hero-bio" id="profile-bio">Short punchy bio goes here.</p>
+
+          <!-- Direct Action Buttons (Call, Email, Message) -->
+          <div class="action-buttons">
+            <a id="btn-call" href="#" class="btn btn-primary">
+              <span>📞</span> CALL ME
+            </a>
+            <a id="btn-email" href="#" class="btn btn-secondary">
+              <span>✉️</span> EMAIL ME
+            </a>
+            <a id="btn-message" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+              <span>💬</span> MESSAGE
+            </a>
+          </div>
+
+          <!-- Social Media Links (Populated from data.js) -->
+          <div class="social-bar" id="social-links" aria-label="Social Media Links"></div>
+
+          <!-- Detailed About Me Card -->
+          <article class="about-card">
+            <div class="card-header-bar">
+              <span class="window-dots"><i></i><i></i><i></i></span>
+              <span class="card-tab-title">ABOUT_ME.TXT</span>
+            </div>
+            <div class="about-card-body">
+              <p id="profile-about">Detailed about me text loads here...</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Kinetic Marquee Divider -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track">
+        <span>✦ CREATIVE DIRECTION ✦ VISUAL STORYTELLING ✦ BOLD DESIGN ✦ DIGITAL CRAFT ✦ FEATURED HIGHLIGHTS </span>
+        <span>✦ CREATIVE DIRECTION ✦ VISUAL STORYTELLING ✦ BOLD DESIGN ✦ DIGITAL CRAFT ✦ FEATURED HIGHLIGHTS </span>
+      </div>
+    </div>
+
+    <!-- ================= INTERACTIVE SLIDER / CAROUSEL SECTION ================= -->
+    <section id="highlights" class="slider-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">01 // FEATURED REEL</span>
+            <h2 class="section-title">HIGHLIGHTS &amp; MOMENTS</h2>
+          </div>
+          <div class="slider-controls">
+            <button id="slider-prev" class="ctrl-btn" aria-label="Previous Slide">◀ PREV</button>
+            <button id="slider-next" class="ctrl-btn" aria-label="Next Slide">NEXT ▶</button>
+          </div>
+        </div>
+
+        <!-- Carousel Viewport -->
+        <div class="carousel-wrapper" id="carousel-wrapper">
+          <div class="carousel-track" id="carousel-track">
+            <!-- Slides injected dynamically via script.js -->
+          </div>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Slide pagination"></div>
+      </div>
+    </section>
+
+    <!-- ================= CUSTOMIZABLE IMAGE GALLERY SECTION ================= -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">02 // VISUAL ARCHIVE</span>
+            <h2 class="section-title">CURATED GALLERY</h2>
+          </div>
+          <div class="gallery-counter-badge" id="gallery-count">0 ITEMS</div>
+        </div>
+
+        <!-- Responsive Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Gallery Cards injected dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= LIGHTBOX MODAL FOR GALLERY ================= -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-card">
+      <div class="card-header-bar">
+        <span class="card-tab-title" id="lightbox-tag">IMAGE_PREVIEW</span>
+        <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close Preview">✕ CLOSE</button>
+      </div>
+      <div class="lightbox-body">
+        <img id="lightbox-img" src="" alt="" />
+        <div class="lightbox-caption">
+          <h3 id="lightbox-title">Title</h3>
+          <p id="lightbox-desc">Description</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER SECTION ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h2 class="footer-logo" id="footer-name">YOUR NAME</h2>
+        <p class="footer-tagline">Crafted with bold pixels, loud colors &amp; zero boring templates.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+
+      <button id="back-to-top" class="btn btn-accent back-top-btn">
+        ↑ BACK TO TOP
+      </button>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p id="footer-copyright">© 2026 All Rights Reserved.</p>
+        <span class="footer-stamp">MAXIMALISM UI // V1.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Load Data First, Then Core Logic -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
