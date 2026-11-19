@@ -23,8 +23,8 @@ const createPlaceholderSVG = (label, bgColor = "#FF3366") =>
 const PORTFOLIO_DATA = {
   // 1. PROFILE & HERO DETAILS
   profile: {
-    brandName: "ALEX.STUDIO",
-    fullName: "ALEXANDER VANCE",
+    brandName: "Sumon Technical Training Center",
+    fullName: "SUMON ALI",
     role: "CREATIVE DEVELOPER & UI ARCHITECT",
     statusBadge: "OPEN FOR COLLABS ⚡",
     location: "📍 DHAKA / REMOTE WORLDWIDE",
