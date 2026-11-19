@@ -38,17 +38,15 @@ profileImage: "assets/images/profile.jpg",
 
   // 2. DIRECT CONTACT BUTTONS (Call, Email, Message)
   contactActions: {
-    phone: "+1234567890", // Used for tel: link
-    email: "hello@alexvance.design", // Used for mailto: link
+    phone: "+8801712141053", // Used for tel: link
+    email: "sumonttc@proton.me", // Used for mailto: link
     // WhatsApp, Telegram, or direct chat link:
-    messageUrl: "https://wa.me/+8801712141053"
+    messageUrl: "https://wa.me/8801712141053"
   },
 
   // 3. SOCIAL MEDIA LINKS
   // Supported icons in script.js: github, linkedin, facebook, instagram, twitter, youtube, dribbble
   socials: [
-    { name: "GitHub", icon: "github", url: "https://github.com/" },
-    { name: "LinkedIn", icon: "linkedin", url: "https://linkedin.com/" },
     { name: "Instagram", icon: "instagram", url: "https://instagram.com/" },
     { name: "Facebook", icon: "facebook", url: "https://facebook.com/" },
     { name: "X / Twitter", icon: "twitter", url: "https://x.com/" }
