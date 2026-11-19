@@ -28,8 +28,7 @@ const PORTFOLIO_DATA = {
     role: "CREATIVE DEVELOPER & UI ARCHITECT",
     statusBadge: "OPEN FOR COLLABS ⚡",
     location: "📍 DHAKA / REMOTE WORLDWIDE",
-    // Replace with: "assets/images/profile.jpg"
-    profileImage: createPlaceholderSVG("assets/images/profile.jpg", "#FFD60A"),
+profileImage: "assets/images/profile.jpg",
     shortBio:
       "I design loud, unforgettable digital experiences, interactive interfaces, and expressive brand identities that refuse to blend in.",
     aboutMe:
