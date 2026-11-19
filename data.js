@@ -29,7 +29,7 @@ const PORTFOLIO_DATA = {
     statusBadge: "OPEN FOR COLLABS ⚡",
     location: "📍 DHAKA / REMOTE WORLDWIDE",
     // Replace with: "assets/images/profile.jpg"
-    profileImage: createPlaceholderSVG("profile.jpg", "#FFD60A"),
+    profileImage: createPlaceholderSVG("./assets/images/profile.jpg", "#FFD60A"),
     shortBio:
       "I design loud, unforgettable digital experiences, interactive interfaces, and expressive brand identities that refuse to blend in.",
     aboutMe:
