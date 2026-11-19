@@ -49,7 +49,8 @@ profileImage: "assets/images/profile.jpg",
   socials: [
     { name: "Instagram", icon: "instagram", url: "https://instagram.com/" },
     { name: "Facebook", icon: "facebook", url: "https://facebook.com/" },
-    { name: "X / Twitter", icon: "twitter", url: "https://x.com/" }
+    { name: "X / Twitter", icon: "twitter", url: "https://x.com/" },
+    { name: "Tiktok", icon: "tiktok", url: "https://tiktok.com/" },
   ],
 
   // 4. INTERACTIVE SLIDER / CAROUSEL ITEMS
