@@ -41,7 +41,7 @@ profileImage: "assets/images/profile.jpg",
     phone: "+1234567890", // Used for tel: link
     email: "hello@alexvance.design", // Used for mailto: link
     // WhatsApp, Telegram, or direct chat link:
-    messageUrl: "https://wa.me/1234567890?text=Hi%20Alex!%20I%20saw%20your%20portfolio."
+    messageUrl: "https://wa.me/+8801712141053"
   },
 
   // 3. SOCIAL MEDIA LINKS
