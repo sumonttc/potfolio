@@ -59,7 +59,7 @@ sliderItems: [
       title: "SUMON TECHNICAL TRAINING CENTER",
       description:
         "Dedicated workspace equipped with modern welding machines where students learn professional techniques directly under my personal supervision.",
-      image: "assets/images/slide-1.jpg",
+      image: "assets/images/slide-1.jpeg",
       linkText: "View Gallery",
       linkUrl: "#gallery"
     },
