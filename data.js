@@ -53,36 +53,32 @@ profileImage: "assets/images/profile.jpg",
     { name: "TikTok", icon: "tiktok", url: "https://www.tiktok.com/@md.sumon.alli15" }
   ],
 
-  // 4. INTERACTIVE SLIDER / CAROUSEL ITEMS
-  sliderItems: [
+sliderItems: [
     {
-      badge: "FEATURED // 01",
-      title: "NEON ARCADE FESTIVAL IDENTITY",
+      badge: "TRAINING CENTER // 01",
+      title: "SUMON TECHNICAL TRAINING CENTER",
       description:
-        "Complete visual direction, motion posters, and interactive ticket portal for an annual indie game and electronic music showcase.",
-      // Replace with: "assets/images/slide-1.jpg"
-      image: createPlaceholderSVG("SLIDE 01 (slide-1.jpg)", "#00E5FF"),
-      linkText: "Explore Highlight",
-      linkUrl: "#gallery"
-    },
-    {
-      badge: "CASE STUDY // 02",
-      title: "HYPER-POP COMMERCE ENGINE",
-      description:
-        "A high-converting custom storefront built with zero frameworks, tactile micro-interactions, and sub-second page loads.",
-      // Replace with: "assets/images/slide-2.jpg"
-      image: createPlaceholderSVG("SLIDE 02 (slide-2.jpg)", "#A3E635"),
+        "Dedicated workspace equipped with modern welding machines where students learn professional techniques directly under my personal supervision.",
+      image: "assets/images/slide-1.jpg",
       linkText: "View Gallery",
       linkUrl: "#gallery"
     },
     {
-      badge: "PERSONAL // 03",
-      title: "ANALOG ZINE & STREET PHOTOGRAPHY",
+      badge: "HANDS-ON SKILLS // 02",
+      title: "EXPERT TIG & ARC WELDING SESSIONS",
       description:
-        "A curated 64-page print publication documenting brutalist architecture, street typography, and midnight cityscapes.",
-      // Replace with: "assets/images/slide-3.jpg"
-      image: createPlaceholderSVG("SLIDE 03 (slide-3.jpg)", "#FF3366"),
-      linkText: "See Captures",
+        "Focusing on core industrial standards, joint precision, safety protocols, and real-world metal fabrication practice.",
+      image: "assets/images/slide-2.jpg",
+      linkText: "Check Works",
+      linkUrl: "#gallery"
+    },
+    {
+      badge: "LIFE & JOURNEY // 03",
+      title: "TRAVELS & PERSONAL MOMENTS",
+      description:
+        "Capturing memories from domestic and international travels, exploring new cultures, and gathering fresh inspirations.",
+      image: "assets/images/slide-3.jpg",
+      linkText: "See More",
       linkUrl: "#gallery"
     }
   ],
