@@ -30,9 +30,9 @@ const PORTFOLIO_DATA = {
     location: "Golapnagar Bazar, Bheramara, Kushtia",
 profileImage: "assets/images/profile.jpg",
     shortBio:
-      "I design loud, unforgettable digital experiences, interactive interfaces, and expressive brand identities that refuse to blend in.",
+      "Proprietor of Sumon Technical Training Center (Sumon TTC) & Master Welder with 17+ years of hands-on experience in TIG, MIG, ARC, and all major welding processes.",
     aboutMe:
-      "Hey there! I'm a multidisciplinary designer and frontend developer obsessed with bold typography, tactile UI systems, and clean vanilla code. Whether I'm crafting web applications, directing visual campaigns, or experimenting with retro-futuristic aesthetics, I believe the web should feel alive, playful, and unmistakably human.",
+      "I am Md. Sumon Ali, Proprietor of Sumon Technical Training Center (Sumon TTC) and an experienced welding specialist with over 17 years of practical work in the field. I have deep hands-on expertise in TIG welding, MIG welding, ARC welding, and all types of industrial and fabrication welding. Strong joints, clean finishing, workplace safety, and dependable technical training are at the core of everything we do.",
     copyrightYear: "2026"
   },
 
