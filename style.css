@@ -85,7 +85,6 @@ a { color: inherit; text-decoration: none; }
   padding: 0 1.25rem;
 }
 
-/* Icon SVG Helper */
 .icon-svg {
   width: 18px;
   height: 18px;
@@ -157,7 +156,6 @@ a { color: inherit; text-decoration: none; }
   transform: translate(-2px, -2px);
 }
 
-/* Clean Icon Theme Button */
 .theme-btn-icon {
   width: 42px;
   height: 42px;
@@ -610,6 +608,46 @@ a { color: inherit; text-decoration: none; }
 .gallery-title { font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; line-height: 1.2; }
 .gallery-desc { color: var(--text-muted); font-size: 0.96rem; }
 
+/* FLOATING BACK TO TOP BUTTON */
+.floating-top-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 95;
+  width: 48px;
+  height: 48px;
+  background-color: var(--accent-yellow);
+  color: #111111;
+  border: 3px solid #111111;
+  border-radius: var(--radius-sm);
+  box-shadow: 4px 4px 0px #111111;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease, background-color 0.15s ease;
+}
+
+.floating-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.floating-top-btn:hover {
+  background-color: var(--accent-cyan);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #111111;
+}
+
+.floating-top-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #111111;
+}
+
 /* LIGHTBOX & SHARE MODAL */
 .lightbox {
   position: fixed;
@@ -703,9 +741,10 @@ a { color: inherit; text-decoration: none; }
   box-shadow: var(--shadow-sm);
 }
 
-.qr-code-box svg {
-  width: 180px;
-  height: 180px;
+.qr-code-box img {
+  width: 160px;
+  height: 160px;
+  display: block;
 }
 
 .share-actions-row {
@@ -720,12 +759,11 @@ a { color: inherit; text-decoration: none; }
   padding: 0.65rem 0.75rem;
 }
 
-/* FOOTER SECTION - Fixed Bottom Gap for Mobile */
+/* FOOTER SECTION */
 .site-footer {
   background-color: var(--accent-cyan);
   color: #111111;
   border-top: var(--border-heavy);
-  margin-bottom: 2.5rem; /* মোবাইল ভার্সনে ব্যাক-টু-টপ বাটনের জন্য পর্যাপ্ত স্পেস */
 }
 
 .footer-inner {
@@ -758,11 +796,6 @@ a { color: inherit; text-decoration: none; }
 .footer-links a:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
-}
-
-.back-top-btn {
-  border-color: #111111;
-  box-shadow: 5px 5px 0px #111111;
 }
 
 .footer-bottom {
@@ -822,5 +855,11 @@ a { color: inherit; text-decoration: none; }
   .gallery-card:hover { transform: none; }
 
   .footer-inner { flex-direction: column; align-items: flex-start; }
-  .back-top-btn { width: 100%; }
+  
+  .floating-top-btn {
+    bottom: 16px;
+    right: 16px;
+    width: 42px;
+    height: 42px;
+  }
 }
