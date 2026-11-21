@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     youtube: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`
   };
 
-  /* THEME SWITCHER (Clean Icon Engine) */
+  /* THEME SWITCHER */
   const htmlEl = document.documentElement;
   const themeToggleBtn = document.getElementById("theme-toggle");
   const themeIconSvg = document.getElementById("theme-icon-svg");
@@ -210,11 +210,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const copyLinkBtn = document.getElementById("btn-copy-link");
   const downloadVcardBtn = document.getElementById("btn-download-vcard");
 
-  // Simple native SVG QR code generator for current page URL
   const generateQRCodeSVG = (url) => {
-    // Generates a lightweight styled matrix representation using standard public API / SVG fallback
     const encodedUrl = encodeURIComponent(url);
-    qrContainer.innerHTML = `<img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodedUrl}" alt="QR Code" style="width:160px;height:160px;display:block;" />`;
+    qrContainer.innerHTML = `<img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodedUrl}" alt="QR Code" style="width:160px;height:160px;display:block;" />`;
   };
 
   shareBtn.addEventListener("click", () => {
@@ -233,7 +231,6 @@ document.addEventListener("DOMContentLoaded", () => {
   shareClose.addEventListener("click", closeShareModal);
   shareBackdrop.addEventListener("click", closeShareModal);
 
-  // Copy Link action
   copyLinkBtn.addEventListener("click", () => {
     navigator.clipboard.writeText(window.location.href).then(() => {
       const originalText = copyLinkBtn.textContent;
@@ -242,7 +239,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Generate vCard (.vcf) blob for download contact
   const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:${profile.fullName}
@@ -255,7 +251,6 @@ END:VCARD`;
   const vCardBlob = new Blob([vCardData], { type: "text/vcard;charset=utf-8" });
   downloadVcardBtn.href = URL.createObjectURL(vCardBlob);
 
-  // ESC key listener for modals
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       if (lightbox.classList.contains("open")) closeLightbox();
@@ -263,8 +258,18 @@ END:VCARD`;
     }
   });
 
-  /* BACK TO TOP */
-  document.getElementById("back-to-top").addEventListener("click", () => {
+  /* FLOATING BACK TO TOP SCROLL BEHAVIOR */
+  const backToTopBtn = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add("show");
+    } else {
+      backToTopBtn.classList.remove("show");
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
