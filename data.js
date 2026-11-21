@@ -48,9 +48,9 @@ profileImage: "assets/images/profile.jpg",
   // Supported icons in script.js: github, linkedin, facebook, instagram, twitter, youtube, dribbble
   socials: [
     { name: "Instagram", icon: "instagram", url: "https://instagram.com/" },
-    { name: "Facebook", icon: "facebook", url: "https://facebook.com/" },
+    { name: "Facebook", icon: "facebook", url: "https://www.facebook.com/sumon.rkz" },
     { name: "X / Twitter", icon: "twitter", url: "https://x.com/" },
-    { name: "TikTok", icon: "tiktok", url: "https://tiktok.com/" }
+    { name: "TikTok", icon: "tiktok", url: "https://www.tiktok.com/@md.sumon.alli15" }
   ],
 
   // 4. INTERACTIVE SLIDER / CAROUSEL ITEMS
