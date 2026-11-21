@@ -25,9 +25,9 @@ const PORTFOLIO_DATA = {
   profile: {
     brandName: "SUMON.TTC",
     fullName: "SUMON ALI",
-    role: "CREATIVE DEVELOPER & UI ARCHITECT",
-    statusBadge: "OPEN FOR COLLABS ⚡",
-    location: "📍 DHAKA / REMOTE WORLDWIDE",
+    role: "PROPRIETOR & MASTER WELDER · TIG, MIG & ARC",
+    statusBadge: "17+ YEARS EXP.",
+    location: "Golapnagar Bazar, Bheramara, Kushtia",
 profileImage: "assets/images/profile.jpg",
     shortBio:
       "I design loud, unforgettable digital experiences, interactive interfaces, and expressive brand identities that refuse to blend in.",
